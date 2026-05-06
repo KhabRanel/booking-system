@@ -4,5 +4,5 @@ CREATE TABLE resources (
     description TEXT,
     capacity    INT          NOT NULL DEFAULT 1,
     status      VARCHAR(50)  NOT NULL DEFAULT 'ACTIVE',
-    created_at  TIMESTAMP    NOT NULL DEFAULT now()
+    created_at  TIMESTAMP WITH TIME ZONE  NOT NULL DEFAULT now()
 );

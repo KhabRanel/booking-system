@@ -4,5 +4,5 @@ CREATE TABLE users (
     password    VARCHAR(255) NOT NULL,
     full_name   VARCHAR(255) NOT NULL,
     role        VARCHAR(50)  NOT NULL DEFAULT 'USER',
-    created_at  TIMESTAMP    NOT NULL DEFAULT now()
+    created_at  TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT now()
 );
