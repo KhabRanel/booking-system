@@ -22,11 +22,11 @@ public class Booking {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "user_id", nullable = false)
-    private UUID userId;
+    private User user;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "resource_id", nullable = false)
-    private UUID resourceId;
+    private Resource resource;
 
     @Column(name = "start_time", nullable = false)
     private Instant startTime;
