@@ -4,7 +4,6 @@ import com.example.booking.domain.entity.User;
 import com.example.booking.domain.enums.Role;
 import com.example.booking.domain.repository.UserRepository;
 import com.example.booking.exception.EmailAlreadyExistsException;
-import com.example.booking.exception.UserNotFoundException;
 import com.example.booking.security.JwtService;
 import com.example.booking.security.UserDetailsServiceImpl;
 import com.example.booking.web.dto.auth.AuthRequest;
